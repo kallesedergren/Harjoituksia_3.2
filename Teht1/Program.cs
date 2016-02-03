@@ -12,37 +12,13 @@ namespace Teht1
         {
             Elevator elevator = new Elevator();
             elevator.Floor = 1;
-            int valinta = 1;
+            int num;
 
-            while (valinta != 0)
+            for (int i = 0; i < ; i++)
             {
-                Console.WriteLine("Welcome to the elevator! Please select a floor you want to go: ");
-                valinta = int.Parse(Console.ReadLine());
-                switch (valinta)
-                {
-                    case 1:
-                        elevator.Floor = 1;
-                        Console.WriteLine("Current floor: " + elevator.Floor);
-                        break;
-                    case 2:
-                        elevator.Floor = 2;
-                        Console.WriteLine("Current floor: " + elevator.Floor);
-                        break;
-                    case 3:
-                        elevator.Floor = 3;
-                        Console.WriteLine("Current floor: " + elevator.Floor);
-                        break;
-                    case 4:
-                        elevator.Floor = 4;
-                        Console.WriteLine("Current floor: " + elevator.Floor);
-                        break;
-                    case 5:
-                        elevator.Floor = 5;
-                        Console.WriteLine("Current floor: " + elevator.Floor);
-                        break;
-                }
-            } 
-            
+                Console.WriteLine("You are currentyly in the " +elevator.Floor + " floor, give a floor number you wish to enter: ");
+                elevator.Floor = int.Parse(Console.ReadLine());
+            }
             
               
         }
